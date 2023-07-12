@@ -1,0 +1,48 @@
+{
+  "name": "moirei/objects",
+  "description": "Simple data & array objects.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Augustus",
+      "email": "augustusokoye@moirei.com"
+    }
+  ],
+  "keywords": [
+    "laravel",
+    "data",
+    "object",
+    "array"
+  ],
+  "scripts": {
+    "pint": "./vendor/bin/pint",
+    "pint:test": "./vendor/bin/pint --test",
+    "test": "./vendor/bin/pest"
+  },
+  "require": {
+    "php": "^8.0",
+    "illuminate/support": "^8|^9|^10.0"
+  },
+  "require-dev": {
+    "pestphp/pest": "^1.21",
+    "pestphp/pest-plugin-laravel": "^1.2",
+    "orchestra/testbench": "^7.5",
+    "phpunit/phpunit": "^9.5",
+    "thled/pest-plugin-shorthands": "^1.1",
+    "laravel/pint": "^1.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "MOIREI\\Objects\\": "src",
+      "MOIREI\\Objects\\Tests\\": "tests"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
+}
