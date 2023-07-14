@@ -23,7 +23,7 @@ abstract class BaseObject implements ArrayAccess, Arrayable
      * @param BaseObject|array $attributes
      * @return static
      */
-    public static function make(BaseObject|array $attributes): static
+    public static function make(BaseObject|array $attributes = []): static
     {
         return new static($attributes);
     }
